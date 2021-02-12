@@ -62,4 +62,35 @@ salary:454000,
 
 
 
+interface Player{
+    club:string,
+    name:string,
+    salary:number,
+    wife?:string,
+    isPlaying:boolean
+}
 
+const messy:Player={
+    name:'Messy',
+    club:'Real Madrid',
+    salary:45000000,
+    wife:'Same One',
+    isPlaying:true
+}
+
+const ronaldo:Player={
+    name:'ronaldo',
+    club:'Liverpool',
+    salary:4500000,
+
+    isPlaying:true
+}
+
+
+function getBonus(player:Player,friends:string[]){
+    return player.salary*.1
+}
+
+const poorPlayer={salary:10000}
+
+getBonus(messy,['Sam','tam'])
